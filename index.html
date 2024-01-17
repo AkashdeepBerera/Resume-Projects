@@ -18,8 +18,12 @@
             text-align: center;
         }
         header h1 {
-            margin: 0;  /* Added to remove default margin */
-            color: #000;  /* Black title text color */
+            margin: 0;
+            color: #000;
+            text-decoration: none; /* Remove default underline for links */
+        }
+        header h1:hover {
+            color: #3498db; /* Change color on hover for visual feedback */
         }
         h1, h2 {
             color: #3498db;
@@ -47,10 +51,10 @@
 <body>
 
     <header>
-        <h1>Akashdeep Kumar - Resume</h1>
-        <p>Email: Akashdeepkumar09@gmail.com | LinkedIn: linkedin.com/in/%20akashdeep-kumar-76ba6b7b | Phone: +919999677034</p>
+        <h1><a href="https://www.linkedin.com/in/akashdeep-kumar-76ba6b7b/" target="_blank" rel="noopener noreferrer">Akashdeep Kumar - Resume</a></h1>
+        <p>Email: Akashdeepkumar09@gmail.com | LinkedIn: <a href="https://www.linkedin.com/in/akashdeep-kumar-76ba6b7b/" target="_blank" rel="noopener noreferrer">linkedin.com/in/akashdeep-kumar-76ba6b7b</a> | Phone: +919999677034</p>
     </header>
-    
+   
     <section class="section">
         <h2>Profile Summary</h2>
         <p>Data analyst with 3+ years of experience in data analysis and visualization, skilled in Python, SQL, Power BI, and data manipulation. Adept at transforming large datasets into actionable insights to drive business decisions.</p>
