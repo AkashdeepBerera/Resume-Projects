@@ -1,133 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to My AWS Lambda Blog!</title>
+  <style>
+    /* ... existing styles ... */
 
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px;
-        }
+    .featured-image {
+      width: 50%;
+      float: left;
+      margin-bottom: 20px;
+    }
 
-        section {
-            margin-bottom: 20px;
-        }
-
-        h2 {
-            color: #333;
-        }
-
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        ul li {
-            margin-bottom: 5px;
-        }
-
-        a {
-            color: #0077cc;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
-    <title>Akashdeep Kumar - Data Analyst</title>
+    @media only screen and (max-width: 768px) {
+      .featured-image {
+        width: 100%;
+        float: none;
+      }
+    }
+  </style>
 </head>
 <body>
-
-    <header>
-        <h1>Akashdeep Kumar</h1>
-        <p>Data Analyst</p>
-    </header>
-
-    <section id="contact">
-        <h2>Contact Information</h2>
-        <p>Email: Akashdeepkumar09@gmail.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/akashdeep-kumar-76ba6b7b/" target="_blank">Akashdeep Kumar</a></p>
-        <p>Phone: +919999677034</p>
+  <header>
+    <h1><a href="#">AWS Lambda Blog</a></h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h2>Unlocking the Power of Serverless with AWS Lambda</h2>
+      <img src="path/to/featured-image.jpg" alt="AWS Lambda" class="featured-image">
+      <p>Welcome to your one-stop shop for all things AWS Lambda! This blog is dedicated to exploring the exciting world of serverless computing and its potential to revolutionize how you build and deploy applications. Dive deeper into the benefits, use cases, and best practices to leverage Lambda's power and unlock a new era of efficient development.</p>
+      <a href="#" class="hero-btn">Get Started</a>
     </section>
-
-    <section id="summary">
-        <h2>Profile Summary</h2>
-        <p>Experienced Data Analyst with 3+ years of expertise in Python, SQL, Power BI, data manipulation, and cloud technology (AWS). Proven ability to transform large datasets into actionable insights for informed decision-making, driving cost reduction, increased efficiency, and strategic growth.</p>
+    <section class="about-lambda">
+      <h2>What is AWS Lambda?</h2>
+      <p>AWS Lambda is a serverless compute service that lets you run code without provisioning or managing servers. It allows you to focus on building your application logic instead of worrying about infrastructure management.</p>
+      <ul>
+        <li>**Pay-per-use:** You only pay for the resources your code consumes, making it cost-effective for applications with varying workloads.</li>
+        <li>**Scalability:** AWS Lambda automatically scales your code to meet demand, ensuring high availability and responsiveness.</li>
+        <li>**Event-driven:** Your code is triggered by events like file uploads, API requests, or changes in other services, simplifying application development.</li>
+        <li>**Wide range of use cases:** You can use Lambda for various tasks, including data processing, web applications, and backend services.</li>
+      </ul>
     </section>
-
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li>Languages: Python, SQL, PostgreSQL, Power Pivot, Power Query, DAX Queries, PySpark</li>
-            <li>Reporting & Visualization: Power Bi, Pandas, Numpy, Matplotlib, Seaborn, Microsoft Excel</li>
-            <li>Framework & Software: Medallia, Power BI, Github, Gitlab</li>
-            <li>Cloud – AWS</li>
-        </ul>
+    <section class="blog-posts">
+      <h2>Latest Blog Posts</h2>
+      <article>
+        <h3>Introducing AWS Lambda: A Guide for Beginners</h3>
+        <p>This article provides a comprehensive introduction to AWS Lambda, explaining its core concepts, benefits, and potential use cases. Get started with serverless computing without any prior experience!</p>
+        <a href="#" class="read-more">Read More</a>
+      </article>
+      <article>
+        <h3>Building Scalable Applications with AWS Lambda and API Gateway</h3>
+        <p>Learn how to combine the power of AWS Lambda with API Gateway to create highly scalable and cost-effective applications. Discover best practices for building serverless APIs and optimize your development workflow.</p>
+        <a href="#" class="read-more">Read More</a>
+      </article>
     </section>
-
-    <section id="experience">
-        <h2>Work Experience</h2>
-        <h3>BMW Group India</h3>
-        <p>Data Analyst (MSX International Payroll) | Aug/2023-Present</p>
-        <ul>
-            <li>.Leveraged Python and SQL to analyze parts sales data, optimizing inventory levels and reducing costs by 12%, resulting in decreased excess inventory.</li>
-            <li>.Developed Power BI dashboards visualizing key metrics, leading to a 15% reduction in decision-making time and a 10% increase in operational efficiency.</li>
-            <li>.Implemented data-driven forecasting strategies, improving stock availability by 10% and reducing stockouts by 8%, boosting customer satisfaction.</li>
-            <li>.Provided actionable insights to senior management, supporting strategic initiatives for business growth in the Inventory department.</li>
-        </ul>
-
-        <h3>Verisk Analytics India</h3>
-        <p>Data Analyst | Jun/2022-Aug/2023</p>
-        <ul>
-            <li>.Conducted comprehensive data analysis, formatting, cleansing, and risk modeling for B2B customers, ensuring accurate and actionable insights for decision-making.</li>
-            <li>.Successfully migrated Tableau Dashboards to Power BI.</li>
-            <li>.Created a last 24 hr detractor(s) alert with a link to the dashboard for Senior Leadership and account owners that helped them make critical decisions in time and resulted in a 19 pts improvement in NPS with respect to last year.</li>
-            <li>.Automated and optimized various analytical processes by creating 20+ SQL views, Python scripts, and ETL pipelines, leading to a 40% increase in efficiency at Verisk Analytics.</li>
-            <li>.Developed and implemented dashboards resulting in a 30% reduction in reporting time.</li>
-            <li>.Experienced in project phases using waterfall and agile methodologies.</li>
-            <li>.Collaborated with cross-functional partners, delivery architects, and senior data analysts to design scalable data tier solutions for enhanced reporting and visualizations.</li>
-        </ul>
-
-        <h3>Aavas Financier Limited India</h3>
-        <p>Data Analyst | Dec/2020-Apr/2022</p>
-        <ul>
-           <li> .Evaluated loan accounts using comprehensive analysis of geography, ratios, ROI, and loan products in order to reduce bad debt losses by 15%.</li>
-           <li> .Managed and analyzed large datasets with multiple branches, employing SQL Server to extract meaningful insights.</li>
-
-        </ul>
-
-        <h3>Internships</h3>
-        <h4>Console Flare (Data Analyst) | Aug/2020 - Dec/2020</h4>
-        <ul>
-            <li>.Utilized Python and SQL to conduct comprehensive data analysis on sales trends, customer behavior, and product performance, resulting in actionable insights that drove a 10% increase in revenue.</li>
-            <!-- Include additional details of your internship experience at Console Flare here -->
-        </ul>
-    </section>
-
-    <section id="certificates">
-        <h2>Certificates</h2>
-        <ul>
-            <li>SQL(Advanced)- HackerRank</li>
-            <li>Microsoft PowerBI for Business Intelligence - Udemy</li>
-            <li>Programming for Everybody (Python) - Coursera</li>
-            <li>Tableau Essential Training - LinkedIn Learning</li>
-            <li>SQL & Power BI: Your Data Analytics and Visualization Journey - Udemy</li>
-        </ul>
-    </section>
-
-    <section id="education">
-        <h2>Education</h2>
-        <p>Master of Business Administration (Finance and Marketing) | Delhi Technological University (Formally D.C.E) | Apr/2018-Apr/2020</p>
-        <p>Bachelor of Business Administration | Sri Guru Teg Bahadur Institute of Management and I.T [ GGSIPU University] | Apr/2012 - Apr/2015</p>
-    </section>
-
+  </main>
+  <footer>
+    <p>&copy; <?php echo date("Y"); ?> My AWS Lambda Blog</p>
+  </footer>
 </body>
 </html>
